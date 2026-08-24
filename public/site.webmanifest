@@ -1,0 +1,37 @@
+{
+  "name": "Nux Growth AI Guide",
+  "short_name": "Nux Growth",
+  "description": "الدليل العملي للذكاء الاصطناعي وهندسة الـ Prompt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08281c",
+  "theme_color": "#0f4a34",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
