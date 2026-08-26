@@ -1,4 +1,4 @@
-import { Gift, Check, ShieldCheck, Sparkles, ArrowLeft, MessageCircle, Clock, Info } from "lucide-react";
+import { Gift, Check, ShieldCheck, Sparkles, ArrowLeft, MessageCircle, Clock, Info, Cloud, Users, Orbit, Video, Image as ImageIcon, Search, BookOpen, Target, TrendingUp, Lightbulb, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CAMPAIGN_CONFIG, GUIDE_BONUS_SPECS, getContactUrl } from "@/lib/subscription-config";
@@ -18,66 +18,118 @@ export function OfferStackSection() {
           </Badge>
 
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-foreground leading-tight">
-            اشتراك الـ 18 شهراً + <br />
-            <span className="text-primary">دليل Nux Growth AI Guide كهدية</span>
+            اشتراك <span className="text-primary">Google Pro</span> لمدة 18 شهراً + <br />
+            <span>دليل Nux Growth للذكاء الاصطناعي كهدية</span>
           </h2>
 
           <p className="text-base sm:text-lg text-muted-foreground font-medium leading-relaxed">
-            استثمار طويل المدى يمنحك الاستقرار في خدماتك الأساسية مع امتلاك أقوى منظومة عملية 
-            لتوجيه وهندسة الذكاء الاصطناعي في بيئة عملك.
+            استثمار متكامل يمنحك 9 أدوات متقدمة من Google في اشتراك واحد، مع امتلاك أقوى منظومة عملية 
+            لتوجيه وهندسة الذكاء الاصطناعي في بيئة عملك ودراستك.
           </p>
         </div>
 
         {/* Dual Offer Architecture Container */}
-        <div className="max-w-4xl mx-auto bg-card border-2 border-border rounded-4xl p-6 sm:p-10 lg:p-12 editorial-card-shadow relative overflow-hidden space-y-10">
+        <div className="max-w-5xl mx-auto bg-card border-2 border-border rounded-4xl p-6 sm:p-10 lg:p-12 editorial-card-shadow relative overflow-hidden space-y-10">
           <div className="absolute top-0 right-0 left-0 h-2 bg-gradient-to-r from-primary via-mint to-primary" />
 
-          {/* Offer Header & Term Badge */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-6">
+          {/* Offer Header with Pricing Badge */}
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-border pb-8">
             <div className="space-y-1">
               <span className="text-xs font-mono font-black text-primary uppercase">
-                العرض الحصري الموحد
+                باقة العرض الحصري الموحد
               </span>
               <h3 className="text-2xl sm:text-3xl font-black text-foreground">
-                اشتراك لمدة {config.durationMonths} شهراً
+                Google Pro · اشتراك {config.durationMonths} شهراً
               </h3>
+              <p className="text-xs text-muted-foreground font-bold">
+                {config.tagline}
+              </p>
             </div>
 
-            <Badge variant="forest" className="text-xs px-4 py-2 font-black self-start sm:self-auto">
-              تغطية شاملة لـ 18 شهراً
-            </Badge>
+            {/* Prominent Price Box */}
+            <div className="bg-forest text-primary-foreground p-4 sm:p-5 rounded-3xl border-2 border-primary shadow-lg flex items-center justify-between sm:justify-start gap-4 self-start md:self-auto min-w-[240px]">
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-emerald-300 line-through opacity-75">
+                    {config.originalPrice}
+                  </span>
+                  <span className="text-[10px] font-mono font-black bg-mint text-forest px-2 py-0.5 rounded-full">
+                    وفر 300 ج.م
+                  </span>
+                </div>
+                <div className="flex items-baseline gap-1.5">
+                  <span className="text-3xl sm:text-4xl font-black text-white font-mono tracking-tight">
+                    {config.totalPrice}
+                  </span>
+                  <span className="text-xs text-emerald-200 font-bold">
+                    فقط
+                  </span>
+                </div>
+                <span className="text-[10px] text-emerald-300/90 block font-medium">
+                  دفعة واحدة تغطي 18 شهراً بالكامل
+                </span>
+              </div>
+
+              <div className="size-10 rounded-2xl bg-white/10 text-mint flex items-center justify-center shrink-0">
+                <Tag size={20} />
+              </div>
+            </div>
           </div>
 
           {/* 2 Split Sections: Primary Offer & Bonus Deliverables */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             
-            {/* 1. Primary Subscription Column */}
+            {/* 1. Primary Google Pro Column */}
             <div className="space-y-4 bg-secondary/40 border border-border rounded-3xl p-6">
               <div className="flex items-center gap-2 pb-2 border-b border-border">
-                <Clock className="text-primary size-5" />
+                <Sparkles className="text-primary size-5" />
                 <span className="text-sm font-black text-foreground">
-                  1. اشتراك الـ 18 شهراً (الخدمة الأساسية)
+                  1. اشتراك Google Pro (الأدوات الـ 9 الأساسية)
                 </span>
               </div>
 
-              <div className="space-y-3 pt-1">
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm text-foreground/90 font-medium">
+              <div className="space-y-2.5 pt-1 text-xs sm:text-sm">
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span>وصول كامل ومستمر لكافة خدمات الاشتراك طوال الـ 18 شهراً.</span>
+                  <span><strong>أحدث موديلات Gemini Pro:</strong> أقوى أداء للإجابة، الكتابة، والبرمجة.</span>
                 </div>
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm text-foreground/90 font-medium">
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span>تحديثات مستمرة ودعم فني دوري طوال فترة سريان الاشتراك.</span>
+                  <span><strong>أداة Antigravity:</strong> تحويل الأفكار لمخططات ورسوم بيانية بثوانٍ.</span>
                 </div>
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm text-foreground/90 font-medium">
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span>استقرار في الخدمة دون الحاجة للتجديد الشهري المتكرر.</span>
+                  <span><strong>Nano Banana:</strong> إنشاء صور مذهلة وواقعية بالذكاء الاصطناعي.</span>
+                </div>
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
+                  <Check size={16} className="text-primary mt-0.5 shrink-0" />
+                  <span><strong>Google Flow:</strong> صناعة وتوليد الفيديوهات والمحتوى باحترافية.</span>
+                </div>
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
+                  <Check size={16} className="text-primary mt-0.5 shrink-0" />
+                  <span><strong>Deep Research:</strong> أبحاث متعمقة وتقارير احترافية فائقة السرعة.</span>
+                </div>
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
+                  <Check size={16} className="text-primary mt-0.5 shrink-0" />
+                  <span><strong>Gemini Notebook:</strong> مساعد دراسي ذكي للتلخيص وتنظيم الملاحظات.</span>
+                </div>
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
+                  <Check size={16} className="text-primary mt-0.5 shrink-0" />
+                  <span><strong>مساحة تخزين سحابية 5TB:</strong> سعة ضخمة وآمنة لكافة مشاريعك.</span>
+                </div>
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
+                  <Check size={16} className="text-primary mt-0.5 shrink-0" />
+                  <span><strong>مشاركة مع 5 أفراد:</strong> استخدام مشترك للعائلة أو فريق العمل.</span>
+                </div>
+                <div className="flex items-start gap-2 text-foreground/90 font-medium">
+                  <Check size={16} className="text-primary mt-0.5 shrink-0" />
+                  <span><strong>أمان وخصوصية متقدمة:</strong> حماية بأحدث تقنيات Google.</span>
                 </div>
               </div>
 
-              <div className="pt-2 text-[11px] text-muted-foreground italic flex items-center gap-1.5">
+              <div className="pt-2 text-[11px] text-muted-foreground italic flex items-center gap-1.5 border-t border-border/50">
                 <Info size={13} className="shrink-0 text-primary" />
-                <span>تكتمل تفاصيل الاشتراك عبر التواصل المباشر مع فريقنا.</span>
+                <span>تغطية شاملة مستمرة طوال فترة الـ 18 شهراً.</span>
               </div>
             </div>
 
@@ -86,49 +138,98 @@ export function OfferStackSection() {
               <div className="flex items-center gap-2 pb-2 border-b border-emerald-500/20">
                 <Gift className="text-emerald-700 dark:text-emerald-400 size-5" />
                 <span className="text-sm font-black text-emerald-900 dark:text-emerald-300">
-                  2. 🎁 Nux Growth AI Guide (هدية متضمنة)
+                  2. 🎁 دليل Nux Growth للذكاء الاصطناعي (هدية مجانية)
                 </span>
               </div>
 
-              <div className="space-y-3 pt-1">
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm font-medium">
+              <div className="space-y-2.5 pt-1 text-xs sm:text-sm font-medium">
+                <div className="flex items-start gap-2">
                   <Check size={16} className="text-emerald-700 dark:text-emerald-400 mt-0.5 shrink-0" />
-                  <span>14 فصلاً تطبيقياً تفاعلياً مع معامل شغل واختبارات.</span>
+                  <span><strong>14 فصلاً تطبيقياً تفاعلياً:</strong> مع معامل شغل واختبارات قياس.</span>
                 </div>
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm font-medium">
+                <div className="flex items-start gap-2">
                   <Check size={16} className="text-emerald-700 dark:text-emerald-400 mt-0.5 shrink-0" />
-                  <span>108 قوالب تشغيلية مقسمة على 18 فئة مع فئة 18 للتدقيق.</span>
+                  <span><strong>108 قوالب تشغيلية في 18 فئة:</strong> مع فئة 18 الحصرية لتدقيق المخرجات.</span>
                 </div>
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm font-medium">
+                <div className="flex items-start gap-2">
                   <Check size={16} className="text-emerald-700 dark:text-emerald-400 mt-0.5 shrink-0" />
-                  <span>13 مساحة عمل مخصصة للأدوار (91 طلباً مع دروع الخصوصية).</span>
+                  <span><strong>13 مساحة عمل مخصصة للأدوار:</strong> (91 طلباً متخصصاً مع دروع الخصوصية).</span>
                 </div>
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm font-medium">
+                <div className="flex items-start gap-2">
                   <Check size={16} className="text-emerald-700 dark:text-emerald-400 mt-0.5 shrink-0" />
-                  <span>مصنع الـ Prompt التفاعلي (4 صيغ) + استوديو سلاسل العمل.</span>
+                  <span><strong>مصنع الـ Prompt التفاعلي (4 صيغ):</strong> وفق معمارية AIDA ثمانية الطبقات.</span>
                 </div>
-                <div className="flex items-start gap-2.5 text-xs sm:text-sm font-medium">
+                <div className="flex items-start gap-2">
                   <Check size={16} className="text-emerald-700 dark:text-emerald-400 mt-0.5 shrink-0" />
-                  <span>مكتبة شخصية محلية 100% تحفظ كل شيء على متصفحك بأمان.</span>
+                  <span><strong>استوديو سلاسل العمل (Workflows):</strong> لتفكيك المهام المركبة خطوة بخطوة.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check size={16} className="text-emerald-700 dark:text-emerald-400 mt-0.5 shrink-0" />
+                  <span><strong>مكتبة شخصية محلية 100%:</strong> حفظ مشفر ومباشر على متصفحك.</span>
+                </div>
+              </div>
+
+              {/* 4 Pillars Mini-Badges */}
+              <div className="grid grid-cols-2 gap-2 pt-3 border-t border-emerald-500/20 text-[10px] font-bold">
+                <div className="bg-emerald-500/15 p-2 rounded-xl border border-emerald-500/20 flex items-center gap-1.5">
+                  <Target size={12} className="text-emerald-700 dark:text-emerald-400" />
+                  <span>للمبتدئين والمحترفين</span>
+                </div>
+                <div className="bg-emerald-500/15 p-2 rounded-xl border border-emerald-500/20 flex items-center gap-1.5">
+                  <TrendingUp size={12} className="text-emerald-700 dark:text-emerald-400" />
+                  <span>زيادة الإنتاجية والنمو</span>
+                </div>
+                <div className="bg-emerald-500/15 p-2 rounded-xl border border-emerald-500/20 flex items-center gap-1.5">
+                  <Lightbulb size={12} className="text-emerald-700 dark:text-emerald-400" />
+                  <span>أمثلة وتطبيقات واقعية</span>
+                </div>
+                <div className="bg-emerald-500/15 p-2 rounded-xl border border-emerald-500/20 flex items-center gap-1.5">
+                  <BookOpen size={12} className="text-emerald-700 dark:text-emerald-400" />
+                  <span>شروحات خطوة بخطوة</span>
                 </div>
               </div>
 
               <div className="pt-2 text-[11px] text-emerald-800 dark:text-emerald-400 font-bold">
-                ✓ متضمنة بالكامل مع اشتراكك بدون أي رسوم إضافية.
+                ✓ مشمول بالكامل كهدية مجانية متضمنة مع باقة الاشتراك.
               </div>
             </div>
 
           </div>
 
+          {/* Slogan Pill */}
+          <div className="text-center pt-2">
+            <span className="text-xs sm:text-sm font-black text-foreground">
+              ✦ {config.slogan} ✦
+            </span>
+          </div>
+
           {/* Conversational Contact Experience Block */}
-          <div id="contact" className="pt-8 border-t border-border space-y-5 text-center">
+          <div id="contact" className="pt-6 border-t border-border space-y-6 text-center">
             
+            {/* Price Highlight Banner */}
+            <div className="max-w-md mx-auto bg-emerald-500/10 border-2 border-emerald-500/25 rounded-2xl p-4 text-center space-y-1">
+              <span className="text-xs font-black text-primary uppercase font-mono block">
+                السعر الخاص بالعرض
+              </span>
+              <div className="flex items-center justify-center gap-2">
+                <span className="text-sm text-muted-foreground line-through font-bold">
+                  {config.originalPrice}
+                </span>
+                <span className="text-2xl sm:text-3xl font-black text-foreground font-mono">
+                  {config.totalPrice}
+                </span>
+                <span className="text-xs font-bold text-primary">
+                  (شاملة 18 شهراً بالكامل + الدليل هدية)
+                </span>
+              </div>
+            </div>
+
             <div className="max-w-xl mx-auto space-y-2">
               <h4 className="text-lg sm:text-xl font-black text-foreground">
-                حابب تعرف تفاصيل الاشتراك؟
+                حابب تشترك بسعر العرض ({config.totalPrice})؟
               </h4>
               <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                تواصل معنا مباشرة وهنوضح لك كافة تفاصيل وبنود الاشتراك وكيفية تفعيل المنظومة واستلام دليلك الميداني فوراً.
+                تواصل معنا مباشرة وهنوضح لك خطوات تفعيل باقة Google Pro الـ 9 أدوات واستلام دليلك الميداني فوراً.
               </p>
             </div>
 
@@ -141,18 +242,18 @@ export function OfferStackSection() {
               >
                 <a href={contactUrl}>
                   <MessageCircle size={20} />
-                  <span>تواصل معنا</span>
+                  <span>تواصل معنا للاشتراك بـ {config.totalPrice}</span>
                 </a>
               </Button>
 
               <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs font-bold text-muted-foreground">
                 <div className="flex items-center gap-1.5">
                   <ShieldCheck size={14} className="text-primary" />
-                  <span>تواصل مباشر للإجابة عن استفساراتك</span>
+                  <span>تفعيل مباشر لخدمات Google Pro</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Sparkles size={14} className="text-primary" />
-                  <span>تفعيل فوري للدليل مع الاشتراك</span>
+                  <Gift size={14} className="text-primary" />
+                  <span>استلام فوري لدليل Nux Growth كهدية</span>
                 </div>
               </div>
             </div>

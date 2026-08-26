@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { MessageCircle, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getContactUrl } from "@/lib/subscription-config";
+import { CAMPAIGN_CONFIG, getContactUrl } from "@/lib/subscription-config";
 
 export function StickyMobileCta() {
   const [visible, setVisible] = useState(false);
+  const config = CAMPAIGN_CONFIG;
   const contactUrl = getContactUrl();
 
   useEffect(() => {
@@ -25,12 +26,17 @@ export function StickyMobileCta() {
     >
       <div className="flex items-center justify-between gap-3">
         <div className="flex flex-col text-right">
-          <span className="text-[11px] font-mono font-bold text-primary flex items-center gap-1">
-            <Gift size={12} />
-            <span>عرض 18 شهراً + الدليل هدية</span>
-          </span>
+          <div className="flex items-center gap-1.5">
+            <span className="text-[11px] font-mono font-bold text-primary flex items-center gap-1">
+              <Gift size={12} />
+              <span>Google Pro (18 شهر)</span>
+            </span>
+            <span className="text-[10px] text-muted-foreground line-through font-bold">
+              {config.originalPrice}
+            </span>
+          </div>
           <span className="text-xs font-black text-foreground">
-            تواصل معنا لمعرفة التفاصيل
+            {config.totalPrice} فقط + الدليل هدية
           </span>
         </div>
 
@@ -41,7 +47,7 @@ export function StickyMobileCta() {
         >
           <a href={contactUrl}>
             <MessageCircle size={14} />
-            <span>تواصل معنا</span>
+            <span>تواصل معنا ({config.totalPrice})</span>
           </a>
         </Button>
       </div>

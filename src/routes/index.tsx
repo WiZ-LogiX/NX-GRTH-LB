@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/landing/Navbar";
 import { HeroSection } from "@/components/landing/HeroSection";
+import { GoogleProFeaturesSection } from "@/components/landing/GoogleProFeaturesSection";
 import { ProblemSection } from "@/components/landing/ProblemSection";
 import { TransformationSection } from "@/components/landing/TransformationSection";
 import { WhatIsGuideSection } from "@/components/landing/WhatIsGuideSection";
@@ -25,46 +26,49 @@ function LandingPage() {
       {/* 0. Top Navigation Bar */}
       <Navbar />
 
-      {/* 1. HERO SECTION (Above the fold clarity) */}
+      {/* 1. HERO SECTION (Above the fold clarity for Google Pro 18-Month Bundle) */}
       <HeroSection />
 
-      {/* 2. THE REAL PROBLEM (Human, practical friction) */}
+      {/* 2. GOOGLE PRO 9-TOOL SUITE (Direct Match to Campaign Flyer Design) */}
+      <GoogleProFeaturesSection />
+
+      {/* 3. THE REAL PROBLEM (Human, practical workplace friction with AI) */}
       <ProblemSection />
 
-      {/* 3. THE SHIFT & 7-STAGE TRANSFORMATION (Methodology & Golden Rule) */}
+      {/* 4. THE SHIFT & 7-STAGE TRANSFORMATION (Methodology & Golden Rule) */}
       <TransformationSection />
 
-      {/* 4. WHAT IS NUX GROWTH AI GUIDE? (Interactive digital guide & application) */}
+      {/* 5. WHAT IS NUX GROWTH AI GUIDE? (Interactive digital workbench vs static PDF) */}
       <WhatIsGuideSection />
 
-      {/* 5. THE CONNECTED GUIDE EXPERIENCE (LEARN -> EXPLORE -> BUILD -> WORK -> SAVE -> REUSE) */}
+      {/* 6. THE CONNECTED GUIDE EXPERIENCE (LEARN -> EXPLORE -> BUILD -> WORK -> SAVE -> REUSE) */}
       <ConnectedJourneySection />
 
-      {/* 6. FEATURE DEEP DIVES (6 Core Verified Pillars) */}
+      {/* 7. FEATURE DEEP DIVES (6 Core Verified Pillars) */}
       <FeatureDeepDivesSection />
 
-      {/* 7. THE "THIS ISN'T JUST AN EBOOK" INTERACTIVE MOMENT (Live Before/After & 4 Variants) */}
+      {/* 8. THE "THIS ISN'T JUST AN EBOOK" INTERACTIVE MOMENT (Live Before/After & 4 Variants) */}
       <InteractiveProductMomentSection />
 
-      {/* 8. WHO IT IS FOR (8 Verified Practical Workplace Roles) */}
+      {/* 9. WHO IT IS FOR (8 Verified Practical Workplace Roles) */}
       <AudienceRolesSection />
 
-      {/* 9. THE BONUS REVEAL (18-Month Subscription + Included Gift) */}
+      {/* 10. THE BONUS REVEAL (3D Book Mockup & 4 Value Pillars) */}
       <BonusRevealSection />
 
-      {/* 10. OFFER STACK (Primary Subscription + Verified Guide Deliverables) */}
+      {/* 11. OFFER STACK (Primary Google Pro 18-Month Subscription + Verified Guide Deliverables) */}
       <OfferStackSection />
 
-      {/* 11. OBJECTIONS & FREQUENTLY ASKED QUESTIONS */}
+      {/* 12. OBJECTIONS & FREQUENTLY ASKED QUESTIONS */}
       <FaqSection />
 
-      {/* 12. FINAL HIGH-IMPACT TRANSFORMATION CTA */}
+      {/* 13. FINAL HIGH-IMPACT TRANSFORMATION CTA */}
       <FinalCtaSection />
 
-      {/* 13. EDITORIAL FOOTER & LEGAL DISCLOSURES */}
+      {/* 14. EDITORIAL FOOTER & LEGAL DISCLOSURES */}
       <Footer />
 
-      {/* 14. STICKY MOBILE CTA BAR */}
+      {/* 15. STICKY MOBILE CTA BAR */}
       <StickyMobileCta />
     </div>
   );

@@ -1,9 +1,10 @@
-import { Sparkles, Gift, ArrowLeft, Eye, Play, BookOpen, Layers, Edit3, ShieldCheck, CheckCircle2, MessageCircle } from "lucide-react";
+import { Sparkles, Gift, ArrowLeft, Eye, BookOpen, Layers, Edit3, ShieldCheck, CheckCircle2, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CAMPAIGN_CONFIG, getContactUrl } from "@/lib/subscription-config";
 
 export function HeroSection() {
+  const config = CAMPAIGN_CONFIG;
   const contactUrl = getContactUrl();
 
   return (
@@ -15,24 +16,22 @@ export function HeroSection() {
         <div className="text-center max-w-4xl mx-auto space-y-6">
           
           {/* Commercial Hierarchy Announcement Pill */}
-          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-500/10 border-2 border-emerald-500/25 text-emerald-900 dark:text-emerald-300 text-xs sm:text-sm font-black shadow-xs animate-in fade-in slide-in-from-bottom-2 duration-500">
+          <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-500/10 border-2 border-emerald-500/25 text-emerald-950 dark:text-emerald-300 text-xs sm:text-sm font-black shadow-xs animate-in fade-in slide-in-from-bottom-2 duration-500">
             <span className="flex size-5 rounded-full bg-emerald-600 text-white items-center justify-center text-[10px]">
               🎁
             </span>
-            <span>هدية متضمنة مع اشتراك الـ 18 شهراً</span>
+            <span>عرض Google Pro لمدة 18 شهراً + دليل Nux Growth هدية مجانية</span>
           </div>
 
           {/* Core Transformative Value Headline */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-foreground leading-[1.16]">
-            أنت تعرف ما تريده من الـ AI.. <br className="hidden sm:inline" />
-            <span className="text-primary">تعلم كيف تطلبه وتقوده باحترافية</span>
+            كل ما تحتاجه من Google.. <br className="hidden sm:inline" />
+            <span className="text-primary font-serif italic">في اشتراك واحد لمدة 18 شهراً</span>
           </h1>
 
           {/* Clear, Human, Non-Jargon Subheadline */}
           <p className="text-base sm:text-xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
-            دليل ميداني ومنظومة تفاعلية متكاملة لموظفي المكاتب، قادة الفرق، وأصحاب الأعمال:
-            انتقل من كتابة طلبات عشوائية تضيع وقتك إلى منهجية منضبطة تخرج لك مسودات دقيقة، 
-            تقارير منسقة، وإيميلات واثقة من المحاولة الأولى — واحفظ كل ما تنجزه محلياً على جهازك.
+            احصل على باقة <strong>Google Pro المتكاملة</strong> (أحدث موديلات Gemini Pro، أداة Antigravity، أداة Nano Banana للصور، أداة Google Flow للفيديو، Deep Research للأبحاث، مساحة 5TB سحابية، ومشاركة 5 أفراد) — مع <strong>دليل Nux Growth الميداني</strong> كهدية متضمنة لتمكينك من قيادة الذكاء الاصطناعي باحترافية.
           </p>
 
           {/* Primary & Secondary Dual CTAs */}
@@ -43,7 +42,7 @@ export function HeroSection() {
               className="h-14 px-8 rounded-2xl bg-primary text-primary-foreground font-black text-sm sm:text-base gap-3 shadow-xl shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
               <a href="#offer">
-                <span>اعرف تفاصيل الاشتراك والمكافأة</span>
+                <span>اعرف تفاصيل باقة Google Pro</span>
                 <ArrowLeft size={18} />
               </a>
             </Button>
@@ -54,9 +53,9 @@ export function HeroSection() {
               size="lg"
               className="h-14 px-7 rounded-2xl border-2 border-border text-foreground font-black text-sm sm:text-base gap-2.5 hover:bg-secondary transition-all"
             >
-              <a href="#interactive-demo">
+              <a href="#google-pro">
                 <Eye size={18} className="text-primary" />
-                <span>شوف الـ Guide والتجربة الحية</span>
+                <span>استعرض مميزات الاشتراك الـ 9</span>
               </a>
             </Button>
           </div>
@@ -65,19 +64,19 @@ export function HeroSection() {
           <div className="pt-6 flex flex-wrap justify-center items-center gap-y-2 gap-x-6 text-xs font-bold text-muted-foreground">
             <div className="flex items-center gap-1.5">
               <CheckCircle2 size={15} className="text-primary" />
-              <span>14 فصلاً تطبيقياً تفاعلياً</span>
+              <span>9 أدوات ذكاء اصطناعي وسحابة في باقة واحدة</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 size={15} className="text-primary" />
-              <span>108 قوالب تشغيلية جاهزة</span>
+              <span>دليل Nux Growth التفاعلي هدية مجانية</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 size={15} className="text-primary" />
-              <span>13 مساحة عمل للأدوار الحقيقية</span>
+              <span>تغطية كاملة ومستقرة لـ 18 شهراً</span>
             </div>
             <div className="flex items-center gap-1.5">
               <CheckCircle2 size={15} className="text-primary" />
-              <span>أمان وحفظ محلي 100% على جهازك</span>
+              <span>مشاركة مع العائلة أو الفريق (5 أفراد)</span>
             </div>
           </div>
         </div>
@@ -93,46 +92,46 @@ export function HeroSection() {
                 <div className="size-3 rounded-full bg-amber-400" />
                 <div className="size-3 rounded-full bg-emerald-400" />
                 <span className="text-[11px] font-mono font-bold text-muted-foreground mr-3">
-                  nux-growth-ai-guide.app · المنظومة التفاعلية
+                  Google Pro (18 Months) + Nux Growth AI Guide
                 </span>
               </div>
               <Badge variant="mint" className="text-[11px] font-black py-0.5">
-                مساحة العمل الميدانية
+                باقة العرض الشاملة
               </Badge>
             </div>
 
             {/* Simulated Ecosystem Dashboard Grid */}
             <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
               
-              {/* Left Column: Live Workbench Status */}
+              {/* Left Column: Live Tools Snapshot */}
               <div className="md:col-span-4 space-y-3.5">
                 <div className="bg-secondary/40 border border-border rounded-2xl p-4 space-y-2">
                   <div className="flex items-center gap-2 text-xs font-black text-foreground">
-                    <BookOpen size={15} className="text-primary" />
-                    <span>الفصل 04: أساسيات هندسة الطلب</span>
+                    <Sparkles size={15} className="text-primary" />
+                    <span>Gemini Pro + Antigravity + Flow</span>
                   </div>
                   <p className="text-[11px] text-muted-foreground leading-relaxed">
-                    إرشادات الصياغة باللغة العربية ومعايير النبرة الطبيعية دون ركاكة.
+                    من كتابة التقارير والمخططات التفاعلية حتى صناعة الصور والفيديوهات الاحترافية.
                   </p>
                 </div>
 
                 <div className="bg-secondary/40 border border-border rounded-2xl p-4 space-y-2">
                   <div className="flex items-center gap-2 text-xs font-black text-foreground">
-                    <Layers size={15} className="text-primary" />
-                    <span>مكتبة القوالب التشغيلية</span>
+                    <BookOpen size={15} className="text-primary" />
+                    <span>دليل Nux Growth للتعامل مع الـ AI</span>
                   </div>
                   <p className="text-[11px] text-muted-foreground leading-relaxed">
-                    نماذج جاهزة للمراسلات والتقارير وفئة مخصصة لفحص واختبار المخرجات.
+                    14 فصلاً تطبيقياً، 108 قوالب، ومصنع AIDA لبناء طلبات عمل منضبطة.
                   </p>
                 </div>
 
                 <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-4 space-y-2">
                   <div className="flex items-center gap-2 text-xs font-black text-emerald-900 dark:text-emerald-300">
                     <ShieldCheck size={15} className="text-emerald-600" />
-                    <span>بيئة العمل الخاصة</span>
+                    <span>مساحة 5TB ومشاركة 5 أفراد</span>
                   </div>
                   <p className="text-[11px] text-emerald-800 dark:text-emerald-400 leading-relaxed font-medium">
-                    تخزين محلي 100% على متصفحك دون إرسال مسوداتك لأي خوادم خارجية.
+                    تخزين سحابي ضخم مع أحدث معايير الأمان والخصوصية من Google.
                   </p>
                 </div>
               </div>
@@ -143,11 +142,11 @@ export function HeroSection() {
                   <div className="flex items-center gap-2">
                     <Edit3 size={16} className="text-mint" />
                     <span className="text-xs font-black text-white">
-                      مصنع الـ Prompt · معمارية AIDA ثمانية الطبقات
+                      مصنع الـ Prompt المرفق بالدليل · معمارية AIDA
                     </span>
                   </div>
                   <span className="text-[10px] font-mono font-bold bg-white/10 text-mint px-2 py-0.5 rounded-md border border-white/10">
-                    4 صيغ فورية
+                    هدية مجانية
                   </span>
                 </div>
 
@@ -165,18 +164,17 @@ export function HeroSection() {
 
                 {/* Code Snippet Box */}
                 <div className="bg-black/30 rounded-xl p-3.5 border border-white/10 font-mono text-[11px] leading-relaxed text-emerald-100/90 text-right space-y-1.5">
-                  <p className="text-mint font-bold"># مثال: تحويل طلب عشوائي لطلب تنفيذي منضبط</p>
-                  <p><span className="text-emerald-400">Role:</span> خبير تواصل مهني وإدارة مشاريع</p>
-                  <p><span className="text-emerald-400">Goal:</span> صياغة رسالة اعتذار رسمية تحافظ على ثقة العميل</p>
-                  <p><span className="text-emerald-400">Context:</span> تأخر تسليم التقرير الدوري 48 ساعة لخلل في خوادم البيانات</p>
-                  <p><span className="text-emerald-400">Constraints:</span> بدون لوم دفاعي، نبرة مسؤولة، تحديد موعد مؤكد</p>
-                  <p><span className="text-emerald-400">Output:</span> بريد مهني موجز من 4 أجزاء وخطوة متابعة واضحة</p>
+                  <p className="text-mint font-bold"># توجيه Gemini Pro عبر معمارية Nux Growth المنضبطة</p>
+                  <p><span className="text-emerald-400">Role:</span> خبير استراتيجي وباحث متقدم في Google Deep Research</p>
+                  <p><span className="text-emerald-400">Goal:</span> إعداد تقرير تحليلي شامل عن اتجاهات السوق</p>
+                  <p><span className="text-emerald-400">Context:</span> مقارنة الأداء والفرص الواعدة للربع القادم</p>
+                  <p><span className="text-emerald-400">Output:</span> ملخص تنفيذي وجدول مقارنة و3 توصيات محددة</p>
                 </div>
 
                 <div className="flex items-center justify-between text-[11px] text-emerald-200/80 pt-1">
-                  <span>القاعدة الذهبية: ولد بالذكاء الاصطناعي.. وراجع قبل الاستخدام</span>
+                  <span>شعار الباقة: اشتراكك الذكي في أدوات Google ... لنمو بلا حدود</span>
                   <a href="#interactive-demo" className="text-mint font-bold underline underline-offset-4 hover:text-white transition-colors">
-                    جرّب بنفسك الآن ←
+                    جرّب التحويل الفوري ←
                   </a>
                 </div>
               </div>

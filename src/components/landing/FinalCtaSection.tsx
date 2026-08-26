@@ -1,8 +1,9 @@
-import { Sparkles, MessageCircle, ShieldCheck, CheckCircle2 } from "lucide-react";
+import { Sparkles, MessageCircle, ShieldCheck, Gift, CheckCircle2, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getContactUrl } from "@/lib/subscription-config";
+import { CAMPAIGN_CONFIG, getContactUrl } from "@/lib/subscription-config";
 
 export function FinalCtaSection() {
+  const config = CAMPAIGN_CONFIG;
   const contactUrl = getContactUrl();
 
   return (
@@ -15,30 +16,38 @@ export function FinalCtaSection() {
         {/* Transformative Quote Pill */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-mint text-xs font-black border border-white/15">
           <Sparkles size={14} />
-          <span>ابدأ قيادة الـ AI في عملك اليوم</span>
+          <span>{config.slogan}</span>
         </div>
 
         {/* Big Resonating Headline */}
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.18]">
-          أنت لا تحتاج أن تصبح خبيراً في الـ AI.. <br className="hidden sm:inline" />
-          <span className="text-mint">أنت تحتاج فقط طريقة أفضل للعمل معه.</span>
+          كل ما تحتاجه من Google.. <br className="hidden sm:inline" />
+          <span className="text-mint font-serif italic">في اشتراك واحد لمدة 18 شهراً</span>
         </h2>
 
         {/* Subheadline Reassurance */}
         <p className="text-base sm:text-xl text-emerald-100/90 font-medium max-w-3xl mx-auto leading-relaxed">
-          تواصل معنا لمعرفة تفاصيل اشتراك الـ 18 شهراً واستلام منظومة Nux Growth AI Guide كاملة 
-          كهدية مرافقة لتطوير مهاراتك وإنتاجية فريقك اليومية.
+          احصل على أدوات الذكاء الاصطناعي والسحابة الـ 9 (Gemini Pro، Antigravity، Nano Banana، Flow، Deep Research، و 5TB) 
+          مع <strong>دليل Nux Growth الميداني</strong> كهدية مجانية مرافقة لتطوير مهاراتك اليومية.
         </p>
 
-        {/* Dual Stack Summary Pill */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-3 bg-black/30 border border-white/15 px-6 py-3 rounded-2xl text-xs sm:text-sm font-bold text-white shadow-inner">
-          <div className="flex items-center gap-1.5">
-            <span className="text-emerald-400">●</span>
-            <span>اشتراك لمدة 18 شهراً</span>
+        {/* Price & Dual Stack Summary Pill */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="inline-flex items-center gap-3 bg-black/40 border border-white/15 px-6 py-3 rounded-2xl text-xs sm:text-sm font-bold text-white shadow-inner">
+            <div className="flex items-center gap-1.5">
+              <span className="text-emerald-400">●</span>
+              <span>اشتراك Google Pro (18 شهراً)</span>
+            </div>
+            <span className="text-white/40">+</span>
+            <div className="flex items-center gap-1.5 text-mint">
+              <span>🎁 دليل Nux Growth هدية</span>
+            </div>
           </div>
-          <span className="text-white/40">+</span>
-          <div className="flex items-center gap-1.5 text-mint">
-            <span>🎁 Nux Growth AI Guide التفاعلي (هدية متضمنة)</span>
+
+          <div className="inline-flex items-center gap-2 bg-mint/15 border border-mint/30 px-5 py-3 rounded-2xl text-white font-mono text-sm font-bold">
+            <span className="line-through text-emerald-300 text-xs">{config.originalPrice}</span>
+            <span className="text-mint text-base font-black">{config.totalPrice}</span>
+            <span className="text-[11px] text-emerald-200">(لفترة محدودة)</span>
           </div>
         </div>
 
@@ -51,18 +60,18 @@ export function FinalCtaSection() {
           >
             <a href={contactUrl}>
               <MessageCircle size={20} />
-              <span>تواصل معنا</span>
+              <span>تواصل معنا للاشتراك بـ {config.totalPrice}</span>
             </a>
           </Button>
 
           <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-xs font-bold text-emerald-200/80">
             <div className="flex items-center gap-1.5">
               <ShieldCheck size={14} className="text-mint" />
-              <span>خصوصية محلية 100%</span>
+              <span>أمان وخصوصية متقدمة من Google</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <CheckCircle2 size={14} className="text-mint" />
-              <span>وصول فوري لكافة الأدوات والقوالب</span>
+              <Gift size={14} className="text-mint" />
+              <span>تفعيل فوري للأدوات والدليل الهدية</span>
             </div>
           </div>
         </div>

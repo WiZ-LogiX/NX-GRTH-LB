@@ -1,27 +1,39 @@
 /**
- * Nux Growth AI Guide — Commercial Subscription & Contact Configuration
- * 
- * IMPORTANT COMMERCIAL MODEL:
- * 1. The 18-Month Subscription is the PRIMARY OFFER.
- * 2. The Nux Growth AI Guide is the INCLUDED BONUS / GIFT with that subscription.
- * 3. There is NO online checkout or payment processing on this page.
- * 4. Purchasing happens through conversation: Discover → Understand → See Guide → Want Offer → Contact Us → Complete via Conversation.
- * 5. Primary CTA: "تواصل معنا" or "اعرف تفاصيل الاشتراك".
- * 
- * All provider details, contact destination, and terms are isolated in this file.
+ * Nux Growth AI Guide — Commercial Subscription & Google Pro Bundle Configuration
+ * Sourced directly from the official NUX GROWTH · Google Pro 18-Month Campaign Flyer.
  */
+
+export interface GoogleProTool {
+  id: string;
+  title: string;
+  subtitle?: string;
+  description: string;
+  iconName: string;
+  category: "ai" | "media" | "research" | "workspace" | "security";
+  badge?: string;
+}
 
 export interface CampaignConfig {
   /** Name of the primary subscription product/service */
   subscriptionName: string;
+  /** Subtitle / Tagline */
+  tagline: string;
   /** Name of the organization / provider offering the subscription */
   providerName: string;
   /** Duration of the primary subscription in months */
   durationMonths: number;
-  /** Configurable contact destination (e.g. WhatsApp link, email, contact form, or Calendly) */
+  /** Current campaign offer price */
+  totalPrice: string;
+  /** Original price before discount */
+  originalPrice: string;
+  /** Currency */
+  currency: string;
+  /** Slogan */
+  slogan: string;
+  /** Configurable contact destination */
   contactUrl: string;
-  /** Verified list of core subscription features & benefits */
-  subscriptionBenefits: string[];
+  /** 9 Core Tools of Google Pro */
+  googleProTools: GoogleProTool[];
   /** Terms of service URL */
   termsUrl: string;
   /** Privacy policy URL */
@@ -29,14 +41,84 @@ export interface CampaignConfig {
 }
 
 export const CAMPAIGN_CONFIG: CampaignConfig = {
-  subscriptionName: "[اسم الخدمة أو الباقة الأساسية]",
-  providerName: "[اسم مزود الخدمة]",
+  subscriptionName: "Google Pro",
+  tagline: "كل ما تحتاجه من Google ... في اشتراك واحد",
+  providerName: "Google",
   durationMonths: 18,
-  contactUrl: "", // Configurable contact destination: will be set later (e.g. https://wa.me/... or contact page)
-  subscriptionBenefits: [
-    "[مزايا وخدمات الاشتراك الأساسي الممتد لمدة 18 شهراً]",
-    "[وصول مستمر وتحديثات دورية طوال فترة سريان الاشتراك]",
-    "[دعم فني وتطوير دوري للمنظومة والخدمات المقدمة]",
+  totalPrice: "499 ج.م",
+  originalPrice: "799 ج.م",
+  currency: "ج.م",
+  slogan: "اشتراكك الذكي في أدوات Google ... لنمو بلا حدود",
+  contactUrl: "", // Configurable contact destination
+  googleProTools: [
+    {
+      id: "antigravity",
+      title: "Antigravity",
+      description: "تحويل الأفكار إلى مخططات ورسوم بيانية احترافية بثوانٍ.",
+      iconName: "Antigravity",
+      category: "ai",
+    },
+    {
+      id: "nano-banana",
+      title: "Nano Banana",
+      subtitle: "لإنشاء الصور",
+      description: "إنشاء صور مذهلة وواقعية بدقة عالية من خلال الذكاء الاصطناعي.",
+      iconName: "NanoBanana",
+      category: "media",
+    },
+    {
+      id: "google-flow",
+      title: "Google Flow",
+      subtitle: "لصناعة الفيديو والمحتوى",
+      description: "أداة متقدمة لإنشاء فيديوهات احترافية بسهولة وبجودة عالية.",
+      iconName: "GoogleFlow",
+      category: "media",
+    },
+    {
+      id: "deep-research",
+      title: "Deep Research",
+      subtitle: "للأبحاث والتقارير",
+      description: "أبحاث متعمقة وذكية تقارير احترافية بدقة وسرعة فائقة.",
+      iconName: "DeepResearch",
+      category: "research",
+    },
+    {
+      id: "gemini-pro",
+      title: "أحدث موديلات Gemini Pro",
+      description: "أقوى أداء للذكاء الاصطناعي للإجابة، الكتابة، البرمجة والإبداع.",
+      iconName: "GeminiPro",
+      category: "ai",
+    },
+    {
+      id: "advanced-security",
+      title: "أمان وخصوصية متقدمة",
+      description: "حماية بياناتك بأحدث تقنيات الأمان من Google وضمن خصوصيتك.",
+      iconName: "Security",
+      category: "security",
+    },
+    {
+      id: "family-sharing",
+      title: "مشاركة المميزات مع 5 أفراد",
+      description: "شارك اشتراكك مع العائلة أو فريقك واستمتعوا بالمميزات معاً.",
+      iconName: "FamilySharing",
+      category: "workspace",
+    },
+    {
+      id: "gemini-notebook",
+      title: "Gemini Notebook",
+      subtitle: "مساعدك الدراسي",
+      description: "مساعد ذكي للطلاب في تلخيص، تنظيم، وكتابة الملاحظات.",
+      iconName: "GeminiNotebook",
+      category: "ai",
+    },
+    {
+      id: "storage-5tb",
+      title: "مساحة تخزين 5TB",
+      description: "تخزين سحابي آمن وكبير لكل ملفاتك وصورك ومشاريعك.",
+      iconName: "Storage5TB",
+      category: "workspace",
+      badge: "5TB",
+    },
   ],
   termsUrl: "#terms",
   privacyUrl: "#privacy",
@@ -55,13 +137,31 @@ export const getContactUrl = (config: CampaignConfig = CAMPAIGN_CONFIG): string 
 export const SUBSCRIPTION_CONFIG = CAMPAIGN_CONFIG;
 
 /**
- * Verified Bonus Specifications — 100% verified against the main guide codebase
+ * Verified Bonus Specifications — NUX GROWTH AI GUIDE
  */
 export const GUIDE_BONUS_SPECS = {
-  bonusName: "Nux Growth AI Guide",
-  badge: "هدية ومكافأة حصرية متضمنة",
-  includedWith: "اشتراك الـ 18 شهراً",
-  deliverableType: "دليل ميداني وتطبيق تفاعلي ومنظومة متكاملة لهندسة الـ Prompt",
+  bonusName: "دليل Nux Growth للتعامل مع الذكاء الاصطناعي",
+  badge: "هدية مجانية مع الاشتراك",
+  includedWith: "اشتراك Google Pro لمدة 18 شهراً",
+  deliverableType: "دليل عملي شامل يساعدك على فهم أدوات الذكاء الاصطناعي واستخدامها بذكاء لتحقيق أفضل النتائج.",
+  fourPillars: [
+    {
+      title: "مناسب للمبتدئين والمحترفين",
+      iconName: "Target",
+    },
+    {
+      title: "استراتيجيات لزيادة الإنتاجية والنمو",
+      iconName: "TrendingUp",
+    },
+    {
+      title: "أمثلة عملية وتطبيقات واقعية",
+      iconName: "Lightbulb",
+    },
+    {
+      title: "شروحات مبسطة وخطوة بخطوة",
+      iconName: "BookOpen",
+    },
+  ],
   verifiedFeatures: [
     {
       title: "14 فصلاً تطبيقياً تفاعلياً",
@@ -76,24 +176,16 @@ export const GUIDE_BONUS_SPECS = {
       desc: "مخصصة لـ WFM، خدمة العملاء، HR، المالية، المبيعات، المشاريع، والعمليات مع دروع الخصوصية.",
     },
     {
-      title: "12 سيناريو يومي مع مقارنة قبل/بعد",
-      desc: "حلول عملية لأبرز معضلات العمل اليومي توضح الطريقة القديمة مقابل طريقة الذكاء الاصطناعي.",
+      title: "مصنع الـ Prompt التفاعلي (4 صيغ منضبطة)",
+      desc: "توليد فوري للطلبات وفق معمارية AIDA ثمانية الطبقات مع تشخيص الجودة الفوري.",
     },
     {
-      title: "مصنع الـ Prompt التفاعلي (Prompt Builder)",
-      desc: "توليد فوري لـ 4 صيغ منضبطة (سريع، قياسي، مفصل، خبير) وفق معمارية AIDA ثمانية الطبقات.",
-    },
-    {
-      title: "استوديو سلاسل العمل (Workflow Studio)",
+      title: "استوديو سلاسل العمل (Workflows Studio)",
       desc: "تفكيك المشاريع المعقدة إلى مراحل تسلسلية متتابعة مع نقاط تدقيق ومراجعة بشرية.",
     },
     {
       title: "مكتبة شخصية محلية 100% (Client-Side)",
-      desc: "حفظ وتخصيص واسترجاع كامل لطلباتك وقوالبك على جهازك دون خوادم وسيطة مع دعم التصدير JSON.",
-    },
-    {
-      title: "مركز الأدوات والمراجع السريعة (Toolkit)",
-      desc: "ورقة غش مكتبية قابلة للطباعة (Cheat Sheet)، قاموس مصطلحات، وخارطة طريق تطبيقية لأربعة أسابيع.",
+      desc: "حفظ وتخصيص واسترجاع كامل لطلباتك وقوالبك على جهازك دون خوادم وسيطة.",
     },
   ],
 };
