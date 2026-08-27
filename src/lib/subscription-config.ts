@@ -75,12 +75,12 @@ export const CAMPAIGN_CONFIG: CampaignConfig = {
       category: "media",
     },
     {
-      id: "deep-research",
-      title: "Deep Research",
-      subtitle: "للأبحاث والتقارير",
-      description: "أبحاث متعمقة وذكية تقارير احترافية بدقة وسرعة فائقة.",
-      iconName: "DeepResearch",
-      category: "research",
+      id: "gemini-live",
+      title: "Gemini Live",
+      subtitle: "للتفاعل الصوتي الفوري",
+      description: "حوار صوتي مباشر وتفكير تفاعلي فوري للعصف الذهني وحل المهام المعقدة.",
+      iconName: "GeminiLive",
+      category: "ai",
     },
     {
       id: "gemini-pro",

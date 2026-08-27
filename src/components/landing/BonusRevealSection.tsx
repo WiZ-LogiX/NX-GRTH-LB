@@ -32,7 +32,7 @@ export function BonusRevealSection() {
               </h2>
 
               <p className="text-sm sm:text-base text-emerald-100/90 leading-relaxed font-medium max-w-2xl">
-                دليل عملي شامل يساعدك على فهم أدوات الذكاء الاصطناعي (مثل Gemini Pro و Antigravity و Flow و Deep Research) 
+                دليل عملي شامل يساعدك على فهم أدوات الذكاء الاصطناعي (مثل Gemini Pro و Antigravity و Flow و Gemini Live) 
                 واستخدامها بذكاء لتحقيق أفضل النتائج اليومية ومضاعفة إنتاجيتك من أول دقيقة.
               </p>
 

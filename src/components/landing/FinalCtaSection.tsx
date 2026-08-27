@@ -27,7 +27,7 @@ export function FinalCtaSection() {
 
         {/* Subheadline Reassurance */}
         <p className="text-base sm:text-xl text-emerald-100/90 font-medium max-w-3xl mx-auto leading-relaxed">
-          احصل على أدوات الذكاء الاصطناعي والسحابة الـ 9 (Gemini Pro، Antigravity، Nano Banana، Flow، Deep Research، و 5TB) 
+          احصل على أدوات الذكاء الاصطناعي والسحابة الـ 9 (Gemini Pro، Antigravity، Nano Banana، Flow، Gemini Live، و 5TB) 
           مع <strong>دليل Nux Growth الميداني</strong> كهدية مجانية مرافقة لتطوير مهاراتك اليومية.
         </p>
 

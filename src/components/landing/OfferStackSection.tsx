@@ -107,7 +107,7 @@ export function OfferStackSection() {
                 </div>
                 <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span><strong>Deep Research:</strong> أبحاث متعمقة وتقارير احترافية فائقة السرعة.</span>
+                  <span><strong>Gemini Live:</strong> حوار صوتي مباشر وتفكير تفاعلي فوري للعصف الذهني.</span>
                 </div>
                 <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />

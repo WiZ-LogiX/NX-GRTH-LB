@@ -4,7 +4,7 @@ import {
   Users, 
   BookOpen, 
   Cloud, 
-  Search, 
+  Mic, 
   Video, 
   Image as ImageIcon, 
   Orbit, 
@@ -13,8 +13,9 @@ import {
   Lightbulb, 
   Gift, 
   Check, 
-  ArrowLeft,
-  MessageCircle
+  ArrowLeft, 
+  MessageCircle,
+  AudioLines
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -24,7 +25,7 @@ export function GoogleProFeaturesSection() {
   const config = CAMPAIGN_CONFIG;
   const contactUrl = getContactUrl();
 
-  const row1Tools = config.googleProTools.slice(0, 5); // Antigravity, Nano Banana, Google Flow, Deep Research, Gemini Pro
+  const row1Tools = config.googleProTools.slice(0, 5); // Antigravity, Nano Banana, Google Flow, Gemini Live, Gemini Pro
   const row2Tools = config.googleProTools.slice(5, 9); // Security, Family, Notebook, Storage 5TB
 
   return (
@@ -143,23 +144,23 @@ export function GoogleProFeaturesSection() {
                 </p>
               </div>
 
-              {/* 4. Deep Research */}
+              {/* 4. Gemini Live */}
               <div className="bg-background/80 border-2 border-border/80 rounded-3xl p-5 text-center space-y-3 flex flex-col justify-between hover:border-primary/50 transition-all hover:shadow-md group">
                 <div className="space-y-3">
                   <div className="size-14 mx-auto rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center border border-emerald-500/20 group-hover:scale-105 transition-transform">
-                    <Search size={28} className="text-emerald-600 dark:text-emerald-400" />
+                    <Mic size={28} className="text-emerald-600 dark:text-emerald-400" />
                   </div>
                   <div>
                     <h3 className="text-base font-black text-foreground">
-                      Deep Research
+                      Gemini Live
                     </h3>
                     <span className="text-[11px] font-bold text-primary block">
-                      للأبحاث والتقارير
+                      للتفاعل الصوتي الفوري
                     </span>
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-                  أبحاث متعمقة وذكية تقارير احترافية بدقة وسرعة فائقة.
+                  حوار صوتي مباشر وتفكير تفاعلي فوري للعصف الذهني وحل المهام المعقدة.
                 </p>
               </div>
 

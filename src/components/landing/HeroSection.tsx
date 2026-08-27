@@ -31,7 +31,7 @@ export function HeroSection() {
 
           {/* Clear, Human, Non-Jargon Subheadline */}
           <p className="text-base sm:text-xl text-muted-foreground font-medium max-w-3xl mx-auto leading-relaxed">
-            احصل على باقة <strong>Google Pro المتكاملة</strong> (أحدث موديلات Gemini Pro، أداة Antigravity، أداة Nano Banana للصور، أداة Google Flow للفيديو، Deep Research للأبحاث، مساحة 5TB سحابية، ومشاركة 5 أفراد) — مع <strong>دليل Nux Growth الميداني</strong> كهدية متضمنة لتمكينك من قيادة الذكاء الاصطناعي باحترافية.
+            احصل على باقة <strong>Google Pro المتكاملة</strong> (أحدث موديلات Gemini Pro، أداة Antigravity، أداة Nano Banana للصور، أداة Google Flow للفيديو، أداة Gemini Live للتفاعل الصوتي، مساحة 5TB سحابية، ومشاركة 5 أفراد) — مع <strong>دليل Nux Growth الميداني</strong> كهدية متضمنة لتمكينك من قيادة الذكاء الاصطناعي باحترافية.
           </p>
 
           {/* Primary & Secondary Dual CTAs */}
@@ -165,7 +165,7 @@ export function HeroSection() {
                 {/* Code Snippet Box */}
                 <div className="bg-black/30 rounded-xl p-3.5 border border-white/10 font-mono text-[11px] leading-relaxed text-emerald-100/90 text-right space-y-1.5">
                   <p className="text-mint font-bold"># توجيه Gemini Pro عبر معمارية Nux Growth المنضبطة</p>
-                  <p><span className="text-emerald-400">Role:</span> خبير استراتيجي وباحث متقدم في Google Deep Research</p>
+                  <p><span className="text-emerald-400">Role:</span> خبير استراتيجي ومستشار أعمال في منظومة Gemini Pro</p>
                   <p><span className="text-emerald-400">Goal:</span> إعداد تقرير تحليلي شامل عن اتجاهات السوق</p>
                   <p><span className="text-emerald-400">Context:</span> مقارنة الأداء والفرص الواعدة للربع القادم</p>
                   <p><span className="text-emerald-400">Output:</span> ملخص تنفيذي وجدول مقارنة و3 توصيات محددة</p>
