@@ -240,9 +240,9 @@ export function OfferStackSection() {
                 size="lg"
                 className="w-full sm:w-auto h-16 px-12 rounded-2xl bg-primary text-primary-foreground font-black text-base sm:text-lg gap-3 shadow-xl shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                <a href={contactUrl}>
+                <a href={contactUrl} target="_blank" rel="noopener noreferrer">
                   <MessageCircle size={20} />
-                  <span>تواصل معنا للاشتراك بـ {config.totalPrice}</span>
+                  <span>تواصل معنا للأشتراك ب499</span>
                 </a>
               </Button>
 

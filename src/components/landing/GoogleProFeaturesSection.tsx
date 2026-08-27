@@ -375,9 +375,9 @@ export function GoogleProFeaturesSection() {
               size="lg"
               className="h-13 px-8 rounded-2xl bg-primary text-primary-foreground font-black text-sm gap-2 shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.02] shrink-0"
             >
-              <a href={contactUrl}>
+              <a href={contactUrl} target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={16} />
-                <span>تواصل معنا للاشتراك بـ {config.totalPrice}</span>
+                <span>تواصل معنا للأشتراك ب499</span>
               </a>
             </Button>
           </div>

@@ -28,6 +28,10 @@ export interface CampaignConfig {
   originalPrice: string;
   /** Currency */
   currency: string;
+  /** WhatsApp contact phone number */
+  whatsappPhone: string;
+  /** Pre-filled WhatsApp message template */
+  whatsappMessageTemplate: string;
   /** Slogan */
   slogan: string;
   /** Configurable contact destination */
@@ -40,6 +44,9 @@ export interface CampaignConfig {
   privacyUrl: string;
 }
 
+const WHATSAPP_PHONE = "201096481396";
+const WHATSAPP_MSG = "السلام عليكم، حابب أشترك في عرض Google Pro (18 شهر) بسعر 499 ج.م واستلم دليل Nux Growth كهدية مجانية.";
+
 export const CAMPAIGN_CONFIG: CampaignConfig = {
   subscriptionName: "Google Pro",
   tagline: "كل ما تحتاجه من Google ... في اشتراك واحد",
@@ -48,8 +55,10 @@ export const CAMPAIGN_CONFIG: CampaignConfig = {
   totalPrice: "499 ج.م",
   originalPrice: "799 ج.م",
   currency: "ج.م",
+  whatsappPhone: WHATSAPP_PHONE,
+  whatsappMessageTemplate: WHATSAPP_MSG,
   slogan: "اشتراكك الذكي في أدوات Google ... لنمو بلا حدود",
-  contactUrl: "", // Configurable contact destination
+  contactUrl: `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(WHATSAPP_MSG)}`,
   googleProTools: [
     {
       id: "antigravity",
@@ -125,13 +134,13 @@ export const CAMPAIGN_CONFIG: CampaignConfig = {
 };
 
 /**
- * Returns the effective contact URL or falls back to scrolling to the on-page contact section.
+ * Returns the effective WhatsApp contact URL with pre-filled message template.
  */
 export const getContactUrl = (config: CampaignConfig = CAMPAIGN_CONFIG): string => {
-  if (config.contactUrl && config.contactUrl.trim() !== "" && !config.contactUrl.includes("[")) {
+  if (config.contactUrl && config.contactUrl.trim() !== "") {
     return config.contactUrl;
   }
-  return "#contact";
+  return `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(WHATSAPP_MSG)}`;
 };
 
 export const SUBSCRIPTION_CONFIG = CAMPAIGN_CONFIG;

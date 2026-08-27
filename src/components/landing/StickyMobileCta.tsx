@@ -45,9 +45,9 @@ export function StickyMobileCta() {
           size="sm"
           className="h-11 px-5 rounded-xl bg-primary text-primary-foreground font-black text-xs gap-1.5 shadow-md shrink-0"
         >
-          <a href={contactUrl}>
+          <a href={contactUrl} target="_blank" rel="noopener noreferrer">
             <MessageCircle size={14} />
-            <span>تواصل معنا ({config.totalPrice})</span>
+            <span>تواصل معنا للأشتراك ب499</span>
           </a>
         </Button>
       </div>

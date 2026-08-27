@@ -58,9 +58,9 @@ export function FinalCtaSection() {
             size="lg"
             className="h-16 px-12 rounded-2xl bg-mint text-forest font-black text-base sm:text-lg gap-3 hover:bg-white transition-all hover:scale-[1.02] active:scale-[0.98] shadow-2xl shadow-black/40"
           >
-            <a href={contactUrl}>
+            <a href={contactUrl} target="_blank" rel="noopener noreferrer">
               <MessageCircle size={20} />
-              <span>تواصل معنا للاشتراك بـ {config.totalPrice}</span>
+              <span>تواصل معنا للأشتراك ب499</span>
             </a>
           </Button>
 

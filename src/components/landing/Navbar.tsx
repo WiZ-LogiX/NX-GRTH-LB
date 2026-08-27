@@ -79,7 +79,7 @@ export function Navbar() {
             size="sm"
             className="h-10 px-5 rounded-xl bg-primary text-primary-foreground font-black text-xs gap-2 shadow-sm hover:shadow-md transition-all"
           >
-            <a href={contactUrl}>
+            <a href={contactUrl} target="_blank" rel="noopener noreferrer">
               <MessageCircle size={14} />
               <span>تواصل معنا</span>
             </a>
@@ -116,8 +116,8 @@ export function Navbar() {
             ))}
           </nav>
           <Button asChild className="w-full h-11 font-black text-xs rounded-xl mt-4">
-            <a href={contactUrl} onClick={() => setMobileMenuOpen(false)}>
-              تواصل معنا للاشتراك وتفعيل الباقة
+            <a href={contactUrl} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+              تواصل معنا للأشتراك ب499
             </a>
           </Button>
         </div>
