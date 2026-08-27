@@ -23,7 +23,7 @@ export function FinalCtaSection() {
         {/* Big Resonating Headline */}
         <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.18]">
           كل ما تحتاجه من Google.. <br className="hidden sm:inline" />
-          <span className="text-mint font-serif italic">في اشتراك واحد لمدة 18 شهراً</span>
+          <span className="text-mint font-serif italic">في باقة واحدة لمدة 18 شهراً</span>
         </h2>
 
         {/* Subheadline Reassurance */}
@@ -37,7 +37,7 @@ export function FinalCtaSection() {
           <div className="inline-flex items-center gap-3 bg-black/40 border border-white/15 px-6 py-3 rounded-2xl text-xs sm:text-sm font-bold text-white shadow-inner">
             <div className="flex items-center gap-1.5">
               <span className="text-emerald-400">●</span>
-              <span>اشتراك Google Pro (18 شهراً)</span>
+              <span>باقة Google Pro (18 شهراً)</span>
             </div>
             <span className="text-white/40">+</span>
             <div className="flex items-center gap-1.5 text-mint">
@@ -66,7 +66,7 @@ export function FinalCtaSection() {
               onClick={() => handleConversionClick("Final CTA Section")}
             >
               <MessageCircle size={20} />
-              <span>تواصل معنا للأشتراك ب499</span>
+              <span>تواصل معنا لتفعيل العرض ب499</span>
             </a>
           </Button>
 

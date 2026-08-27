@@ -19,12 +19,12 @@ export function OfferStackSection() {
           </Badge>
 
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-foreground leading-tight">
-            اشتراك <span className="text-primary">Google Pro</span> لمدة 18 شهراً + <br />
+            باقة <span className="text-primary">Google Pro</span> لمدة 18 شهراً + <br />
             <span>دليل Nux Growth للذكاء الاصطناعي كهدية</span>
           </h2>
 
           <p className="text-base sm:text-lg text-muted-foreground font-medium leading-relaxed">
-            استثمار متكامل يمنحك 9 أدوات متقدمة من Google في اشتراك واحد، مع امتلاك أقوى منظومة عملية 
+            استثمار متكامل يمنحك 9 أدوات متقدمة من Google في باقة واحدة، مع امتلاك أقوى منظومة عملية 
             لتوجيه وهندسة الذكاء الاصطناعي في بيئة عملك ودراستك.
           </p>
         </div>
@@ -40,7 +40,7 @@ export function OfferStackSection() {
                 باقة العرض الحصري الموحد
               </span>
               <h3 className="text-2xl sm:text-3xl font-black text-foreground">
-                Google Pro · اشتراك {config.durationMonths} شهراً
+                Google Pro · باقة {config.durationMonths} شهراً
               </h3>
               <p className="text-xs text-muted-foreground font-bold">
                 {config.tagline}
@@ -85,7 +85,7 @@ export function OfferStackSection() {
               <div className="flex items-center gap-2 pb-2 border-b border-border">
                 <Sparkles className="text-primary size-5" />
                 <span className="text-sm font-black text-foreground">
-                  1. اشتراك Google Pro (الأدوات الـ 9 الأساسية)
+                  1. باقة Google Pro (الأدوات الـ 9 الأساسية)
                 </span>
               </div>
 
@@ -120,7 +120,7 @@ export function OfferStackSection() {
                 </div>
                 <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
-                  <span><strong>مشاركة مع 5 أفراد:</strong> استخدام مشترك للعائلة أو فريق العمل.</span>
+                  <span><strong>مشاركة مع 5 أفراد:</strong> مشاركة المزايا مع العائلة أو فريق العمل.</span>
                 </div>
                 <div className="flex items-start gap-2 text-foreground/90 font-medium">
                   <Check size={16} className="text-primary mt-0.5 shrink-0" />
@@ -191,7 +191,7 @@ export function OfferStackSection() {
               </div>
 
               <div className="pt-2 text-[11px] text-emerald-800 dark:text-emerald-400 font-bold">
-                ✓ مشمول بالكامل كهدية مجانية متضمنة مع باقة الاشتراك.
+                ✓ مشمول بالكامل كهدية مجانية متضمنة مع العرض.
               </div>
             </div>
 
@@ -227,7 +227,7 @@ export function OfferStackSection() {
 
             <div className="max-w-xl mx-auto space-y-2">
               <h4 className="text-lg sm:text-xl font-black text-foreground">
-                حابب تشترك بسعر العرض ({config.totalPrice})؟
+                حابب تستفيد بسعر العرض ({config.totalPrice})؟
               </h4>
               <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 تواصل معنا مباشرة وهنوضح لك خطوات تفعيل باقة Google Pro الـ 9 أدوات واستلام دليلك الميداني فوراً.
@@ -248,7 +248,7 @@ export function OfferStackSection() {
                   onClick={() => handleConversionClick("Offer Stack Section")}
                 >
                   <MessageCircle size={20} />
-                  <span>تواصل معنا للأشتراك ب499</span>
+                  <span>تواصل معنا لتفعيل العرض ب499</span>
                 </a>
               </Button>
 

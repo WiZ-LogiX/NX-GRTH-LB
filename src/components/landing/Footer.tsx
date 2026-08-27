@@ -45,7 +45,7 @@ export function Footer() {
             ✦ {config.slogan} ✦
           </p>
           <p>
-            <strong>تفاصيل باقة الاشتراك:</strong> باقة Google Pro تشمل الوصول لأحدث موديلات Gemini Pro، أداة Antigravity، Nano Banana، Google Flow، Gemini Live للتفاعل الصوتي، Gemini Notebook، ومساحة تخزين سحابية 5TB مع إمكانية مشاركة المميزات مع 5 أفراد لمدة 18 شهراً.
+            <strong>تفاصيل باقة Google Pro:</strong> تشمل الوصول لأحدث موديلات Gemini Pro، أداة Antigravity، Nano Banana، Google Flow، Gemini Live للتفاعل الصوتي، Gemini Notebook، ومساحة تخزين سحابية 5TB مع إمكانية مشاركة المميزات مع 5 أفراد لمدة 18 شهراً.
           </p>
           <p>
             <strong>الهدية المرفقة والخصوصية:</strong> دليل Nux Growth AI Guide هو أداة ومنظومة تفاعلية مستقلة تعمل محلياً على متصفحك (100% Client-Side) لحفظ خصوصية مسوداتك وأعمالك، وتهدف لتمكينك من استخراج أعلى عائد إنتاجي من أدوات الذكاء الاصطناعي.

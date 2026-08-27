@@ -79,7 +79,7 @@ export function GoogleProFeaturesSection() {
             {/* Section Sub-Title */}
             <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-black text-muted-foreground uppercase tracking-widest pt-2">
               <span className="text-primary">✦</span>
-              <span>مميزات الاشتراك</span>
+              <span>مميزات الباقة</span>
               <span className="text-primary">✦</span>
             </div>
           </div>
@@ -211,7 +211,7 @@ export function GoogleProFeaturesSection() {
                   </h3>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed font-medium">
-                  شارك اشتراكك مع العائلة أو فريقك واستمتعوا بالمميزات معاً.
+                  شارك الباقة والمميزات مع العائلة أو فريقك واستمتعوا معاً.
                 </p>
               </div>
 
@@ -293,7 +293,7 @@ export function GoogleProFeaturesSection() {
                 
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-mint text-xs font-black border border-white/15">
                   <Gift size={14} />
-                  <span>هدية مجانية مع الاشتراك</span>
+                  <span>هدية مجانية مع الباقة</span>
                 </div>
 
                 <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
@@ -383,7 +383,7 @@ export function GoogleProFeaturesSection() {
                 onClick={() => handleConversionClick("Google Pro Features Section")}
               >
                 <MessageCircle size={16} />
-                <span>تواصل معنا للأشتراك ب499</span>
+                <span>تواصل معنا لتفعيل العرض ب499</span>
               </a>
             </Button>
           </div>

@@ -22,7 +22,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "تعلم كيف تقود الذكاء الاصطناعي في صلب عملك اليومي: 14 فصلاً تطبيقياً، 108 قوالب، 13 دوراً وظيفياً، ومصنع تفاعلي لبناء الـ Prompts المنضبطة. هدية مع اشتراك الـ 18 شهراً.",
+          "تعلم كيف تقود الذكاء الاصطناعي في صلب عملك اليومي: 14 فصلاً تطبيقياً، 108 قوالب، 13 دوراً وظيفياً، ومصنع تفاعلي لبناء الـ Prompts المنضبطة. هدية مع باقة الـ 18 شهراً.",
       },
       { name: "application-name", content: "Nux Growth AI Guide" },
       { name: "apple-mobile-web-app-title", content: "Nux Growth AI Guide" },

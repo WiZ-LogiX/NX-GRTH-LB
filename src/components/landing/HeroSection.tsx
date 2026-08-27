@@ -26,7 +26,7 @@ export function HeroSection() {
           {/* Core Transformative Value Headline */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-foreground leading-[1.16]">
             كل ما تحتاجه من Google.. <br className="hidden sm:inline" />
-            <span className="text-primary font-serif italic">في اشتراك واحد لمدة 18 شهراً</span>
+            <span className="text-primary font-serif italic">في باقة واحدة لمدة 18 شهراً</span>
           </h1>
 
           {/* Clear, Human, Non-Jargon Subheadline */}
@@ -55,7 +55,7 @@ export function HeroSection() {
             >
               <a href="#google-pro">
                 <Eye size={18} className="text-primary" />
-                <span>استعرض مميزات الاشتراك الـ 9</span>
+                <span>استعرض مميزات الباقة الـ 9</span>
               </a>
             </Button>
           </div>
@@ -172,7 +172,7 @@ export function HeroSection() {
                 </div>
 
                 <div className="flex items-center justify-between text-[11px] text-emerald-200/80 pt-1">
-                  <span>شعار الباقة: اشتراكك الذكي في أدوات Google ... لنمو بلا حدود</span>
+                  <span>شعار الباقة: حسابك الذكي في أدوات Google ... لنمو بلا حدود</span>
                   <a href="#interactive-demo" className="text-mint font-bold underline underline-offset-4 hover:text-white transition-colors">
                     جرّب التحويل الفوري ←
                   </a>

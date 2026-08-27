@@ -23,11 +23,11 @@ export function BonusRevealSection() {
               
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-mint text-xs font-black border border-white/15">
                 <Gift size={14} />
-                <span>هدية مجانية مع الاشتراك</span>
+                <span>هدية مجانية مع الباقة</span>
               </div>
 
               <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight">
-                ومع اشتراكك في Google Pro لمدة 18 شهراً.. <br />
+                ومع حصولك على Google Pro لمدة 18 شهراً.. <br />
                 <span className="text-mint">دليل Nux Growth للذكاء الاصطناعي هيكون معاك كهدية.</span>
               </h2>
 
@@ -111,7 +111,7 @@ export function BonusRevealSection() {
               </div>
 
               <div className="bg-black/30 border border-white/10 rounded-2xl px-5 py-2 text-center text-xs text-emerald-200/90 font-bold">
-                ✓ مشمول بالكامل ومجاناً مع اشتراك الـ 18 شهراً
+                ✓ مشمول بالكامل ومجاناً مع باقة الـ 18 شهراً
               </div>
             </div>
 

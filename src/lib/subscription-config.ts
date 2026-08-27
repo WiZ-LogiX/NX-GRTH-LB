@@ -45,11 +45,11 @@ export interface CampaignConfig {
 }
 
 const WHATSAPP_PHONE = "201096481396";
-const WHATSAPP_MSG = "السلام عليكم، حابب أشترك في عرض Google Pro (18 شهر) بسعر 499 ج.م واستلم دليل Nux Growth كهدية مجانية.";
+const WHATSAPP_MSG = "السلام عليكم، حابب استفيد من عرض Google Pro (18 شهر) بسعر 499 ج.م واستلم دليل Nux Growth كهدية مجانية.";
 
 export const CAMPAIGN_CONFIG: CampaignConfig = {
   subscriptionName: "Google Pro",
-  tagline: "كل ما تحتاجه من Google ... في اشتراك واحد",
+  tagline: "كل ما تحتاجه من Google ... في باقة واحدة",
   providerName: "Google",
   durationMonths: 18,
   totalPrice: "499 ج.م",
@@ -57,7 +57,7 @@ export const CAMPAIGN_CONFIG: CampaignConfig = {
   currency: "ج.م",
   whatsappPhone: WHATSAPP_PHONE,
   whatsappMessageTemplate: WHATSAPP_MSG,
-  slogan: "اشتراكك الذكي في أدوات Google ... لنمو بلا حدود",
+  slogan: "حسابك الذكي في أدوات Google ... لنمو بلا حدود",
   contactUrl: `https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(WHATSAPP_MSG)}`,
   googleProTools: [
     {
@@ -108,7 +108,7 @@ export const CAMPAIGN_CONFIG: CampaignConfig = {
     {
       id: "family-sharing",
       title: "مشاركة المميزات مع 5 أفراد",
-      description: "شارك اشتراكك مع العائلة أو فريقك واستمتعوا بالمميزات معاً.",
+      description: "شارك الباقة والمميزات مع العائلة أو فريقك واستمتعوا معاً.",
       iconName: "FamilySharing",
       category: "workspace",
     },
@@ -150,8 +150,8 @@ export const SUBSCRIPTION_CONFIG = CAMPAIGN_CONFIG;
  */
 export const GUIDE_BONUS_SPECS = {
   bonusName: "دليل Nux Growth للتعامل مع الذكاء الاصطناعي",
-  badge: "هدية مجانية مع الاشتراك",
-  includedWith: "اشتراك Google Pro لمدة 18 شهراً",
+  badge: "هدية مجانية مع الباقة",
+  includedWith: "باقة Google Pro لمدة 18 شهراً",
   deliverableType: "دليل عملي شامل يساعدك على فهم أدوات الذكاء الاصطناعي واستخدامها بذكاء لتحقيق أفضل النتائج.",
   fourPillars: [
     {

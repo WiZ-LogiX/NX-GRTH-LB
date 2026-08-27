@@ -49,7 +49,7 @@ export function Navbar() {
                 <span className="text-primary font-mono text-xs">GOOGLE PRO</span>
               </span>
               <span className="text-[10px] text-muted-foreground font-bold">
-                اشتراك 18 شهراً + الدليل هدية
+                باقة 18 شهراً + الدليل هدية
               </span>
             </div>
           </a>
@@ -131,7 +131,7 @@ export function Navbar() {
                 setMobileMenuOpen(false);
               }}
             >
-              تواصل معنا للأشتراك ب499
+              تواصل معنا لتفعيل العرض ب499
             </a>
           </Button>
         </div>
