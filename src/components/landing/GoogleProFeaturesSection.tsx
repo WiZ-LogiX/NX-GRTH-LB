@@ -20,6 +20,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CAMPAIGN_CONFIG, GUIDE_BONUS_SPECS, getContactUrl } from "@/lib/subscription-config";
+import { handleConversionClick } from "@/lib/meta-pixel";
 
 export function GoogleProFeaturesSection() {
   const config = CAMPAIGN_CONFIG;
@@ -375,7 +376,12 @@ export function GoogleProFeaturesSection() {
               size="lg"
               className="h-13 px-8 rounded-2xl bg-primary text-primary-foreground font-black text-sm gap-2 shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.02] shrink-0"
             >
-              <a href={contactUrl} target="_blank" rel="noopener noreferrer">
+              <a 
+                href={contactUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => handleConversionClick("Google Pro Features Section")}
+              >
                 <MessageCircle size={16} />
                 <span>تواصل معنا للأشتراك ب499</span>
               </a>

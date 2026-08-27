@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { MessageCircle, Menu, X, ArrowLeft, Gift, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CAMPAIGN_CONFIG, getContactUrl } from "@/lib/subscription-config";
+import { handleConversionClick } from "@/lib/meta-pixel";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -79,7 +80,12 @@ export function Navbar() {
             size="sm"
             className="h-10 px-5 rounded-xl bg-primary text-primary-foreground font-black text-xs gap-2 shadow-sm hover:shadow-md transition-all"
           >
-            <a href={contactUrl} target="_blank" rel="noopener noreferrer">
+            <a 
+              href={contactUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => handleConversionClick("Navbar Contact Button")}
+            >
               <MessageCircle size={14} />
               <span>تواصل معنا</span>
             </a>
@@ -116,7 +122,15 @@ export function Navbar() {
             ))}
           </nav>
           <Button asChild className="w-full h-11 font-black text-xs rounded-xl mt-4">
-            <a href={contactUrl} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+            <a 
+              href={contactUrl} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              onClick={() => {
+                handleConversionClick("Mobile Drawer Contact Button");
+                setMobileMenuOpen(false);
+              }}
+            >
               تواصل معنا للأشتراك ب499
             </a>
           </Button>

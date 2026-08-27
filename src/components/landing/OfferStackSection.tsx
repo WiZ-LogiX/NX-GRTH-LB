@@ -2,6 +2,7 @@ import { Gift, Check, ShieldCheck, Sparkles, ArrowLeft, MessageCircle, Clock, In
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CAMPAIGN_CONFIG, GUIDE_BONUS_SPECS, getContactUrl } from "@/lib/subscription-config";
+import { handleConversionClick } from "@/lib/meta-pixel";
 
 export function OfferStackSection() {
   const config = CAMPAIGN_CONFIG;
@@ -240,7 +241,12 @@ export function OfferStackSection() {
                 size="lg"
                 className="w-full sm:w-auto h-16 px-12 rounded-2xl bg-primary text-primary-foreground font-black text-base sm:text-lg gap-3 shadow-xl shadow-primary/25 hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                <a href={contactUrl} target="_blank" rel="noopener noreferrer">
+                <a 
+                  href={contactUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => handleConversionClick("Offer Stack Section")}
+                >
                   <MessageCircle size={20} />
                   <span>تواصل معنا للأشتراك ب499</span>
                 </a>

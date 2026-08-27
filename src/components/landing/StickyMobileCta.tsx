@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { MessageCircle, Gift } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CAMPAIGN_CONFIG, getContactUrl } from "@/lib/subscription-config";
+import { handleConversionClick } from "@/lib/meta-pixel";
 
 export function StickyMobileCta() {
   const [visible, setVisible] = useState(false);
@@ -45,7 +46,12 @@ export function StickyMobileCta() {
           size="sm"
           className="h-11 px-5 rounded-xl bg-primary text-primary-foreground font-black text-xs gap-1.5 shadow-md shrink-0"
         >
-          <a href={contactUrl} target="_blank" rel="noopener noreferrer">
+          <a 
+            href={contactUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            onClick={() => handleConversionClick("Mobile Sticky CTA Bar")}
+          >
             <MessageCircle size={14} />
             <span>تواصل معنا للأشتراك ب499</span>
           </a>
