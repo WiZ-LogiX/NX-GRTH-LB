@@ -7,7 +7,7 @@
  */
 
 // Configured Meta Pixel ID
-export const DEFAULT_META_PIXEL_ID = "2117525738836891";
+export const DEFAULT_META_PIXEL_ID = "1945614042783862";
 
 /**
  * Retrieves the effective Meta Pixel ID from environment variables or default constant.

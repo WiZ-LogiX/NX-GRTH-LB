@@ -9,7 +9,7 @@ import { type ReactNode } from "react";
 import { Toaster } from "sonner";
 import appCss from "../styles.css?url";
 
-const META_PIXEL_ID = "2117525738836891";
+const META_PIXEL_ID = "1945614042783862";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
