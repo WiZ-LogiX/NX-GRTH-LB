@@ -45,7 +45,7 @@ export interface CampaignConfig {
 }
 
 const WHATSAPP_PHONE = "201096481396";
-const WHATSAPP_MSG = "السلام عليكم، حابب استفيد من عرض Google Pro (18 شهر) بسعر 499 ج.م واستلم دليل Nux Growth كهدية مجانية.";
+const WHATSAPP_MSG = "السلام عليكم، حابب استفيد من عرض Google Pro (18 شهر) بسعر 299 ج.م واستلم دليل Nux Growth كهدية مجانية.";
 
 export const CAMPAIGN_CONFIG: CampaignConfig = {
   subscriptionName: "Google Pro",
