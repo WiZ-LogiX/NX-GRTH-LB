@@ -383,7 +383,7 @@ export function GoogleProFeaturesSection() {
                 onClick={() => handleConversionClick("Google Pro Features Section")}
               >
                 <MessageCircle size={16} />
-                <span>تواصل معنا لتفعيل العرض ب499</span>
+                <span>تواصل معنا لتفعيل العرض بـ299 ج.م</span>
               </a>
             </Button>
           </div>
