@@ -53,7 +53,7 @@ export function StickyMobileCta() {
             onClick={() => handleConversionClick("Mobile Sticky CTA Bar")}
           >
             <MessageCircle size={14} />
-            <span>تواصل معنا لتفعيل العرض ب499</span>
+            <span>تواصل معنا لتفعيل العرض بـ299 ج.م</span>
           </a>
         </Button>
       </div>
