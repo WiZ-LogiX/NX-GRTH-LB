@@ -9,6 +9,7 @@ import { ConnectedJourneySection } from "@/components/landing/ConnectedJourneySe
 import { FeatureDeepDivesSection } from "@/components/landing/FeatureDeepDivesSection";
 import { InteractiveProductMomentSection } from "@/components/landing/InteractiveProductMomentSection";
 import { AudienceRolesSection } from "@/components/landing/AudienceRolesSection";
+import { CustomerReviewsSection } from "@/components/landing/CustomerReviewsSection";
 import { BonusRevealSection } from "@/components/landing/BonusRevealSection";
 import { OfferStackSection } from "@/components/landing/OfferStackSection";
 import { FaqSection } from "@/components/landing/FaqSection";
@@ -53,22 +54,25 @@ function LandingPage() {
       {/* 9. WHO IT IS FOR (8 Verified Practical Workplace Roles) */}
       <AudienceRolesSection />
 
-      {/* 10. THE BONUS REVEAL (3D Book Mockup & 4 Value Pillars) */}
+      {/* 10. CUSTOMER REVIEWS / SOCIAL PROOF */}
+      <CustomerReviewsSection />
+
+      {/* 11. THE BONUS REVEAL (3D Book Mockup & 4 Value Pillars) */}
       <BonusRevealSection />
 
-      {/* 11. OFFER STACK (Primary Google Pro 18-Month Subscription + Verified Guide Deliverables) */}
+      {/* 12. OFFER STACK (Primary Google Pro 18-Month Subscription + Verified Guide Deliverables) */}
       <OfferStackSection />
 
-      {/* 12. OBJECTIONS & FREQUENTLY ASKED QUESTIONS */}
+      {/* 13. OBJECTIONS & FREQUENTLY ASKED QUESTIONS */}
       <FaqSection />
 
-      {/* 13. FINAL HIGH-IMPACT TRANSFORMATION CTA */}
+      {/* 14. FINAL HIGH-IMPACT TRANSFORMATION CTA */}
       <FinalCtaSection />
 
-      {/* 14. EDITORIAL FOOTER & LEGAL DISCLOSURES */}
+      {/* 15. EDITORIAL FOOTER & LEGAL DISCLOSURES */}
       <Footer />
 
-      {/* 15. STICKY MOBILE CTA BAR */}
+      {/* 16. STICKY MOBILE CTA BAR */}
       <StickyMobileCta />
     </div>
   );
